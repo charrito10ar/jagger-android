@@ -32,6 +32,13 @@
             </android.support.v7.widget.Toolbar>
 
 
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/geography"/>
+
+
 
         </android.support.design.widget.CollapsingToolbarLayout>
 
@@ -46,17 +53,42 @@
         android:background="@color/cardview_shadow_start_color"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <Button
-            android:id="@+id/dashboard_button_play"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAllCaps="true"
-            android:textSize="18dp"
-            android:padding="18dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginLeft="16dp"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:text="Jugar" />
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/dashboard_button_play"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAllCaps="true"
+                android:textSize="18dp"
+                android:padding="18dp"
+                android:onClick="play"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:text="Jugar" />
+
+            <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                android:layout_below="@id/dashboard_button_play"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/progress"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dashboard_button_play"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="42dp"
+                android:text="0%"/>
+
+
+        </RelativeLayout>
+
 
     </android.support.v4.widget.NestedScrollView>
 

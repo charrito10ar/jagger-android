@@ -1,6 +1,15 @@
 <resources>
-    <string name="app_name">TriviaCountry</string>
+    <string name="app_name">Mega Trivia</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="category_name_art">Arts</string>
+    <string name="category_name_ent">Entertainment</string>
+    <string name="category_name_geo">Geography</string>
+    <string name="category_name_his">History</string>
+    <string name="category_name_sci">Science</string>
+    <string name="category_name_spo">Sports</string>
+
 </resources>

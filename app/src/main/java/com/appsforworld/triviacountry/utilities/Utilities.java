@@ -27,4 +27,23 @@ public class Utilities {
         }
         return json;
     }
+
+
+    public static String getCategoryString(int category){
+
+        switch (category){
+            case Constants.ART_CATEGORY_MACHINE:
+                return Constants.ART_CATEGORY;
+            case Constants.ENT_CATEGORY_MACHINE:
+                return Constants.ENT_CATEGORY;
+            case Constants.GEO_CATEGORY_MACHINE:
+                return Constants.GEO_CATEGORY;
+            case Constants.HIS_CATEGORY_MACHINE:
+                return Constants.HIS_CATEGORY;
+            case Constants.SCI_CATEGORY_MACHINE:
+                return Constants.SCI_CATEGORY;
+            default:
+                return Constants.SPO_CATEGORY;
+        }
+    }
 }
