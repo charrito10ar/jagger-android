@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">100% Trivia</string>
+
+    <string name="admob_app_id">ca-app-pub-9789712484984548~7251445317</string>
+    <string name="dashboard_banner_ad_unit_id">ca-app-pub-9789712484984548/8728178510</string>
+    <string name="spin_banner_ad_unit_id">ca-app-pub-9789712484984548/2681644916</string>
+    <string name="question_intertitial_ad_unit_id">ca-app-pub-9789712484984548/4158378111</string>
+
+    <string name="language_code">DA</string>
+    <string name="country_code">DK</string>
+
+    <string name="category_name_art">Kunst</string>
+    <string name="category_name_ent">Underholdning</string>
+    <string name="category_name_geo">Geografi</string>
+    <string name="category_name_his">Historie</string>
+    <string name="category_name_sci">Videnskab</string>
+    <string name="category_name_spo">Sport</string>
+
+    <string name="incorrect_text">Du forkerte</string>
+    <string name="correct_text">Du korrigere</string>
+    <string name="answered_text">Samlede Besvaret</string>
+    <string name="spin_activity_level">Niveau #%d</string>
+    <string name="dashboard_points">Points %1$d / %2$d</string>
+    <string name="spin_activity_title">Spin slot</string>
+    <string name="spin_activity_title_post_shot">Vælg den kategori af spørgsmålet</string>
+    <string name="spin_activity_title_shoting">Dreje...</string>
+    <string name="spin_activity_subtitle_post_shot">Du besvarer x %d Points</string>
+
+    <string name="correct_result_text">Korrekt</string>
+    <string name="incorrect_result_text">Ukorrekt</string>
+    <string name="time_out_result_text">Tiden er gået</string>
+
+    <string name="warning_to_spin">Before you have to push spin</string>
+    <string name="resume_points_text">Korrekt svar</string>
+    <string name="resume_time_points_text">Respuesta Correcta</string>
+    <string name="resume_bonus_points_text">Respuesta Correcta</string>
+    <string name="points_amount_text">+%d</string>
+    <string name="report_question_text">Rapport spørgsmål</string>
+    <string name="button_play_text">Spille</string>
+    <string name="continue_text">Blive ved</string>
+    <string name="time_bonus_text">Time bonus</string>
+    <string name="spin_is_done_error_text">Du har kastet</string>
+
+</resources>

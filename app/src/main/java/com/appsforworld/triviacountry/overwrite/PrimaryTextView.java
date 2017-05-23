@@ -31,7 +31,7 @@ public class PrimaryTextView extends TextView {
 
     private void init() {
         Typeface tf = Typeface.createFromAsset(context.getAssets(),
-                "PocketMonk.otf");
+                "JandaManateeSolid.ttf");
         setTypeface(tf);
     }
 }

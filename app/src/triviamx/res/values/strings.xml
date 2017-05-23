@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">100% Trivia</string>
+
+    <string name="admob_app_id">ca-app-pub-9789712484984548~7469294510</string>
+    <string name="dashboard_banner_ad_unit_id">ca-app-pub-9789712484984548/1422760914</string>
+    <string name="spin_banner_ad_unit_id">ca-app-pub-9789712484984548/5852960514</string>
+    <string name="question_intertitial_ad_unit_id">ca-app-pub-9789712484984548/2899494112</string>
+
+    <string name="language_code">ES</string>
+    <string name="country_code">MX</string>
+
+    <string name="category_name_art">Arte</string>
+    <string name="category_name_ent">Entretenimiento</string>
+    <string name="category_name_geo">Geografía</string>
+    <string name="category_name_his">Historia</string>
+    <string name="category_name_sci">Ciencia</string>
+    <string name="category_name_spo">Deportes</string>
+
+    <string name="incorrect_text">Incorrectas</string>
+    <string name="correct_text">Correctas</string>
+    <string name="answered_text">Total Respondidas</string>
+    <string name="spin_activity_level">Nivel #%d</string>
+    <string name="dashboard_points">Puntos %1$d / %2$d</string>
+    <string name="spin_activity_title">Haz girar el slot</string>
+    <string name="spin_activity_title_post_shot">Elige la categoría de la pregunta</string>
+    <string name="spin_activity_title_shoting">Girando...</string>
+    <string name="spin_activity_subtitle_post_shot">Contestas x %d puntos</string>
+
+    <string name="correct_result_text">Correcto</string>
+    <string name="incorrect_result_text">Incorrecto</string>
+    <string name="time_out_result_text">Tiempo fuera</string>
+
+    <string name="warning_to_spin">Before you have to push spin</string>
+    <string name="resume_points_text">Respuesta Correcta</string>
+    <string name="resume_time_points_text">Respuesta Correcta</string>
+    <string name="resume_bonus_points_text">Respuesta Correcta</string>
+    <string name="points_amount_text">+%d</string>
+    <string name="report_question_text">Reportar pregunta</string>
+    <string name="button_play_text">Jugar</string>
+    <string name="continue_text">Continuar</string>
+    <string name="time_bonus_text">Bonus de tiempo</string>
+    <string name="spin_is_done_error_text">Ya lanzaste</string>
+
+</resources>

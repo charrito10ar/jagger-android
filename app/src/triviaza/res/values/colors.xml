@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="first_spin_color">@color/colorPrimary</color>
+    <color name="second_spin_color">@color/colorAccent</color>
+    <color name="third_spin_color">@color/colorPrimary</color>
+
+</resources>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">100% Trivia DK</string>
+
+    <string name="admob_app_id">!!!</string>
+
+    <string name="dashboard_banner_ad_unit_id">!!</string>
+    <string name="spin_banner_ad_unit_id">!!</string>
+    <string name="question_intertitial_ad_unit_id">!!</string>
+
+    <string name="language_code">EN</string>
+    <string name="country_code">UK</string>
+
+</resources>

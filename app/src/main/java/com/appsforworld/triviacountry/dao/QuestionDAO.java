@@ -61,10 +61,11 @@ public class QuestionDAO {
     public Question selectByCategory(String category){
         Question question = new Question();
         Cursor fila = database.rawQuery("select * from " + QuestionContract.TABLE_NAME +
-                " where " + QuestionContract.CATEGORY + " = '" + category + "' ORDER BY RANDOM() LIMIT 1", null);
+                " WHERE " + QuestionContract.CATEGORY + " = '" + category + "' AND " + QuestionContract.VIEW + " = 0 " + "ORDER BY RANDOM() LIMIT 1", null);
         if (fila.getCount() > 0){
             if (fila.moveToFirst()) {
                 do {
+                    question.setId(fila.getInt(0));
                     question.setText(fila.getString(1));
                     question.setResponses(fila.getString(2));
                     question.setCategory(fila.getString(3));
@@ -77,6 +78,23 @@ public class QuestionDAO {
         }
         fila.close();
         return question;
+    }
+
+    public void updateView(Question question, int view){
+        ContentValues values = new ContentValues();
+        values.put(QuestionContract.VIEW, view);
+        database.update(QuestionContract.TABLE_NAME, values, "_id=" + question.getId(), null);
+    }
+
+    public int getNotViewCount(){
+        Cursor row = database.rawQuery("select * from " + QuestionContract.TABLE_NAME +
+                " WHERE " + QuestionContract.VIEW + " = 0 ", null);
+        return row.getCount();
+    }
+
+
+    public void deleteAllView(){
+        database.delete(QuestionContract.TABLE_NAME, QuestionContract.VIEW + " = 1" , null);
     }
 
 }

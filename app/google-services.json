@@ -1,0 +1,187 @@
+{
+  "project_info": {
+    "project_number": "904838393110",
+    "firebase_url": "https://trivia-uk.firebaseio.com",
+    "project_id": "trivia-uk",
+    "storage_bucket": "trivia-uk.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904838393110:android:c2d3d7fb899a6f67",
+        "android_client_info": {
+          "package_name": "com.appsforworld.triviacountry"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904838393110-n60la5ie5oq501gpokg5doduk7b6dpto.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsforworld.triviacountry",
+            "certificate_hash": "2E85D789DABC752368E80030A61079F566F2D0F6"
+          }
+        },
+        {
+          "client_id": "904838393110-ln5auh0ho7kjqrovi05uphmt13d6m70k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ox7OHfiSEMx5DuxKvqzDq2Bwt-dQUEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904838393110-ln5auh0ho7kjqrovi05uphmt13d6m70k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904838393110:android:64dd866b1c6a263e",
+        "android_client_info": {
+          "package_name": "com.appsforworld.triviacountrydk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904838393110-9jod1iv4jjkqjnulbmvtrbm779l7ccrt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsforworld.triviacountrydk",
+            "certificate_hash": "2E85D789DABC752368E80030A61079F566F2D0F6"
+          }
+        },
+        {
+          "client_id": "904838393110-ln5auh0ho7kjqrovi05uphmt13d6m70k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ox7OHfiSEMx5DuxKvqzDq2Bwt-dQUEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904838393110-ln5auh0ho7kjqrovi05uphmt13d6m70k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904838393110:android:85e119cec2b667b9",
+        "android_client_info": {
+          "package_name": "com.appsforworld.triviacountryza"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904838393110-fs9t0tm4lp0992gkl87pq6pm7d6rlgiu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsforworld.triviacountryza",
+            "certificate_hash": "2E85D789DABC752368E80030A61079F566F2D0F6"
+          }
+        },
+        {
+          "client_id": "904838393110-ln5auh0ho7kjqrovi05uphmt13d6m70k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ox7OHfiSEMx5DuxKvqzDq2Bwt-dQUEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904838393110-ln5auh0ho7kjqrovi05uphmt13d6m70k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:904838393110:android:5e598cbeaa0fad03",
+        "android_client_info": {
+          "package_name": "com.appsforworld.triviacountrymx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "904838393110-nhhdefmhs1jjclnddg84a9f85o470fle.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.appsforworld.triviacountrymx",
+            "certificate_hash": "2E85D789DABC752368E80030A61079F566F2D0F6"
+          }
+        },
+        {
+          "client_id": "904838393110-ln5auh0ho7kjqrovi05uphmt13d6m70k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7ox7OHfiSEMx5DuxKvqzDq2Bwt-dQUEQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "904838393110-ln5auh0ho7kjqrovi05uphmt13d6m70k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">100% Trivia DK</string>
+
+    <string name="admob_app_id">ca-app-pub-9789712484984548~2569383719</string>
+
+    <string name="dashboard_banner_ad_unit_id">ca-app-pub-9789712484984548/4046116913</string>
+    <string name="spin_banner_ad_unit_id">ca-app-pub-9789712484984548/4772643715</string>
+    <string name="question_intertitial_ad_unit_id">ca-app-pub-9789712484984548/5433621714</string>
+
+</resources>

@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
     android:background="@color/colorBackgroundDark"
     tools:context="com.appsforworld.triviacountry.SpinActivity">
 
@@ -29,12 +30,14 @@
                     android:background="?attr/selectableItemBackgroundBorderless"/>
 
                 <com.appsforworld.triviacountry.overwrite.PrimaryTextView
+                    android:id="@+id/spin_activity_level"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
-                    android:textSize="30sp"
-                    android:textColor="@android:color/white"
-                    android:text="NIVEL 20"/>
+                    android:textSize="22sp"
+                    android:textColor="@color/white"
+                    android:textAllCaps="true"
+                    android:text="Nivel #15"/>
 
             </RelativeLayout>
 
@@ -46,89 +49,146 @@
         android:layout_height="match_parent"
         android:layout_marginTop="?attr/actionBarSize"
         android:orientation="vertical"
-        android:weightSum="2">
+        android:weightSum="1">
 
-        <LinearLayout
+        <com.appsforworld.triviacountry.overwrite.PrimaryTextView
+            android:id="@+id/spin_activity_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/white"
+            android:layout_marginTop="16dp"
+            android:textAllCaps="true"
+            android:textSize="15sp"
+            android:text="@string/spin_activity_title"/>
+
+        <RelativeLayout
+            android:id="@+id/layout_up"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:paddingLeft="@dimen/activity_horizontal_margin"
-            android:paddingRight="@dimen/activity_horizontal_margin"
-            android:paddingTop="@dimen/activity_vertical_margin">
+            android:layout_weight="0.6">
 
-            <FrameLayout
-                android:id="@+id/firstSpin"
-                android:layout_width="0dp"
-                android:layout_height="120dp"
-                android:layout_weight="1"
-                android:layout_marginRight="2dp"
-                android:background="@color/colorBulb">
+            <LinearLayout
+                android:id="@+id/layout_slot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:paddingTop="@dimen/activity_vertical_margin">
 
-                <ImageView
-                    android:id="@+id/firstSpin_ic"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="18dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/question_mark_init"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:onClick="selectFirstSpin"/>
 
-            </FrameLayout>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/firstSpin"
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_weight="1"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginEnd="1dp"
+                    app:cardBackgroundColor="@color/first_spin_color"
+                    app:cardElevation="7dp">
 
-            <FrameLayout
-                android:id="@+id/secondSpin"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="120dp"
-                android:layout_marginRight="2dp"
-                android:background="@color/colorBulb">
+                        <ImageView
+                            android:id="@+id/firstSpin_ic"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="18dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/question_mark_init"
+                            android:background="?attr/selectableItemBackgroundBorderless"
+                            android:onClick="selectFirstSpin"/>
 
-                <ImageView
-                    android:id="@+id/secondSpin_ic"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="18dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/bulb"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:onClick="selectSecondSpin"/>
+                </android.support.v7.widget.CardView>
 
-            </FrameLayout>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/secondSpin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="120dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginEnd="1dp"
+                    app:cardBackgroundColor="@color/second_spin_color"
+                    app:cardElevation="7dp">
 
-            <FrameLayout
-                android:id="@+id/thirdSpin"
-                android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="120dp"
-                android:background="@color/colorBulb">
+                    <ImageView
+                        android:id="@+id/secondSpin_ic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/bulb"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:onClick="selectSecondSpin"/>
 
-                <ImageView
-                    android:id="@+id/thirdSpin_ic"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:padding="18dp"
-                    android:layout_gravity="center"
-                    android:src="@drawable/question_mark_finish"
-                    android:background="?attr/selectableItemBackgroundBorderless"
-                    android:onClick="selectThirdSpin"/>
+                </android.support.v7.widget.CardView>
 
-            </FrameLayout>
+                <android.support.v7.widget.CardView
+                    android:id="@+id/thirdSpin"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="120dp"
+                    app:cardElevation="7dp"
+                    app:cardBackgroundColor="@color/third_spin_color">
 
-        </LinearLayout>
+                    <ImageView
+                        android:id="@+id/thirdSpin_ic"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="18dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/question_mark_finish"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:onClick="selectThirdSpin"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@android:color/white"
-            android:gravity="center">
-            <TextView
+                </android.support.v7.widget.CardView>
+
+            </LinearLayout>
+
+            <com.appsforworld.triviacountry.overwrite.StrokeTextView
+                android:id="@+id/bonus_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Hola"/>
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="48dp"
+                android:textAllCaps="true"
+                android:textSize="36sp"
+                android:textColor="@color/colorBonus"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:shadowColor="@color/white"
+                android:shadowDx="1.0"
+                android:shadowDy="0.7"
+                android:shadowRadius="1"
+                android:text="Bonus +3"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout_slot">
+
+                    <com.appsforworld.triviacountry.overwrite.SecondaryBoldTextView
+                        android:id="@+id/spin_activity_subtitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:textColor="@color/white"
+                        android:layout_centerHorizontal="true"
+                        android:text="Contestas x 2 puntos"
+                        android:visibility="invisible"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:background="@android:color/white"
+            android:gravity="center">
 
         </LinearLayout>
 
@@ -146,7 +206,17 @@
         android:src="@drawable/ic_spin"
         android:onClick="spin"
         android:layout_marginBottom="16dp"
-        android:layout_alignParentBottom="true"
+        android:layout_above="@+id/adViewSpin"
         android:layout_centerHorizontal="true"/>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adViewSpin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/spin_banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
 
 </RelativeLayout>
